@@ -1,0 +1,24 @@
+body {
+  background-color: powderblue;
+}
+
+#girassol {
+    width:25%;
+    height:550px;
+    float:right;
+    margin: 50px;
+}
+
+#montanhas {
+    width:25%;
+    height: 550px;
+    float:center;
+    margin: 50px;
+}
+
+#vasos {
+    width:25%;
+    height: 550px;
+    float:left;
+    margin: 50px;
+}
