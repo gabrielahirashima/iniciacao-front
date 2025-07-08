@@ -3,22 +3,22 @@ body {
 }
 
 #girassol {
-    width:25%;
-    height:550px;
+    width:10%;
+    height:100px;
     float:right;
     margin: 50px;
 }
 
 #montanhas {
     width:25%;
-    height: 550px;
+    height: 100px;
     float:center;
     margin: 50px;
 }
 
 #vasos {
     width:25%;
-    height: 550px;
+    height: 100px;
     float:left;
     margin: 50px;
 }
