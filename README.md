@@ -1,4 +1,4 @@
-# iniciacao-front
+# React + Vite
 
 ## Repositório de aprendizado de front-end
 - Abordagens básicas referentes a HTML e CSS : Referências do W3Schools

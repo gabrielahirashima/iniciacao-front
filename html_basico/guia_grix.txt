@@ -1,0 +1,82 @@
+Aprendizado em: https://cssgridgarden.com/
+
+*** Grid ***
+#garden {
+  display: grid; -> Aponta que o objeto é uma grid
+  grid-template-columns: 20% 20% 20% 20% 20%; -> Cria 5 colunas 
+  grid-template-rows: 20% 20% 20% 20% 20%; -> Cria 5 linhas
+}
+#water {
+grid-column-start: 3; -> aponta a 3 coluna
+}
+
+*** grid-column-end ***
+#water {
+  grid-column-start: 1;
+  grid-column-end: 4;-> Aqui agua até a 3 coluna (completa), pois termina no inicio da 4 coluna
+}
+
+#water {
+  grid-column-start: 5;
+    grid-column-end: 2; --> também é possivel ir do fim ao inicio
+}
+
+#water {
+  grid-column-start: 1;
+    grid-column-end: -2; --> aponta que quero que acabe a grid em 2 colunas antes do fim
+}
+
+*** span ***
+#water {
+  grid-column-start: 1;
+    grid-column-end: span 2; --> aponta que quero que acabe a grid em 2 colunas depois
+}
+
+** grid-column**
+#water {
+grid-column: 4 / 6;  --> aponta onde começa e onde termina
+}
+
+#water {
+grid-column: span 3/5; --> aponta onde começa e onde termina
+}
+
+*** row-start ***
+#water {
+grid-row-start: 3 --> aponta onde inicia a linha
+}
+
+*** grid-row *** 
+#water {
+    grid-row: 3 / 6
+}
+
+*** grid-area*** -> combinacao de grid-row e grid-column
+#water {
+    grid-area: 1 / 2 / 4 / 6 --> Ordem de leitura: row-start, column-start, row-end, column-end
+}
+
+*** order *** -> override na ordem dos elementos
+#poison {
+order: 5
+}
+
+*** repeat ***
+#garden {
+  display: grid;
+    grid-template-columns: repeat(5, 12.5%); --> melhor escrita para repetir tamanhos de grid
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+*** fr *** --> unidade de fracao: fracao da grid
+#garden {
+  display: grid;
+grid-template-columns: 1fr 5fr;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+*** grid-template *** --> Combinacao de grid-template-rows e grid-template-columns
+#garden {
+  display: grid;
+grid-template: 50% 50% / 200px; --> rows / columns
+}
